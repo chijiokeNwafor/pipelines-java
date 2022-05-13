@@ -5,10 +5,13 @@
 
 trigger:
 - master
-  
+pr:
+- master
+- releases/*
+
 strategy:
   matrix:
-    jdk10_linux:
+    jdk11_linux:
       imageName: "ubuntu-latest"
       jdkVersion: "1.9"
     jdk11_windows:
