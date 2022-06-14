@@ -11,13 +11,13 @@ pr:
 
 strategy:
   matrix:
-    jdk11_linux:
+    linux:
       imageName: "ubuntu-latest"
-      jdkVersion: "1.9"
-    jdk11_windows:
+    mac:
+      imageName: "macOS-latest"
+    windows:
       imageName: "windows-latest"
-      jdkVersion: "1.8"
-  maxParallel: 2
+  maxParallel: 3
 
 pool:
   vmImage: $(imageName)
